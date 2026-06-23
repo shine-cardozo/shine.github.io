@@ -1,5 +1,6 @@
 
-#Custom Theme
+@import "{{ site.theme }}";
+
 div {
   font-family: Arial, sans-serif;font-family: Arial, sans-serif;
 }
