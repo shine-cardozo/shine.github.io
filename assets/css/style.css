@@ -1,8 +1,58 @@
 
 div {
-  font-family: Arial, sans-serif;
 }
 
 body {
-  background-color: #f0f0f0;
+    font-family: Verdana;
+    background-color: #fff;
+    color: #42e2b8;
+    font-size: 20px;
+    margin: 0 auto;
+    display: inline;
+    font-weight: 700;
+    /* color: #503e8a; */
+}
+
+.envelope {
+    text-align: center;
+    background-color: #fff;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.folds {
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.fold1 {
+    background-color: #ffe;
+    width: 250px;
+    height: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.indexlist {
+    list-style-type: none;
+}
+
+.indexlist li {
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+.fold1 .title {
+    font-size: 40px;
+}
+
+.fold1 .entry {
+    font-weight: 200;
+}
+
+.fold2 {
+    background-color: #ffd;
+    width: 1000px;
+    height: 100%;
+    text-align: left;
 }
