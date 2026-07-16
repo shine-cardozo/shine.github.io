@@ -121,10 +121,10 @@
             max-width: 850px;
         }
 
-        /* Skills Grid */
+        /* Skills, Services & Tools Layout */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 25px;
         }
 
@@ -137,9 +137,18 @@
         }
 
         .skill-category h3 {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .skill-category p.subtitle {
+            font-size: 0.85rem;
+            color: var(--text-muted);
             margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
         }
 
         .skill-tags {
@@ -155,6 +164,7 @@
             border-radius: 20px;
             font-size: 0.85rem;
             font-weight: 500;
+            border: 1px solid var(--border-color);
         }
 
         /* Experience (Timeline Style) */
@@ -280,72 +290,126 @@
             </p>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Technical Skills</h2>
+        <!-- SECTION 1: SKILLS, SERVICES & TOOLS -->
+        <section id="skills-services-tools">
+            <h2>Skills, Services &amp; Tools</h2>
             <div class="skills-grid">
                 
-                <!-- Administration -->
+                <!-- Services Offered -->
                 <div class="skill-category">
-                    <h3>IT Administration & Workflows</h3>
+                    <h3>Services &amp; Solutions</h3>
+                    <p class="subtitle">What I Deliver</p>
+                    <div class="skill-tags">
+                        <span class="tag">Systems Administration</span>
+                        <span class="tag">Network Administration</span>
+                        <span class="tag">In-House Hardware Repair &amp; Maintenance</span>
+                        <span class="tag">Dockerized Application Deployments</span>
+                        <span class="tag">Office LAN, CCTV &amp; Biometric Setups</span>
+                        <span class="tag">Conferencing Environment Configuration</span>
+                        <span class="tag">IT Infrastructure Monitoring</span>
+                        <span class="tag">SLA &amp; Incident Management Setups</span>
+                        <span class="tag">CIS Security Audits</span>
+                        <span class="tag">WordPress Site Management &amp; Hosting</span>
+                        <span class="tag">Task Automation via Custom Scripting</span>
+                        <span class="tag">Vulnerability &amp; Patch Management</span>
+                        <span class="tag">Social Media &amp; Content Management</span>
+                        <span class="tag">Technical &amp; SOP Documentation</span>
+                        <span class="tag">Graphic Design &amp; Video Editing</span>
+                        <span class="tag">Search Engine Optimization (SEO)</span>
+                    </div>
+                </div>
+
+                <!-- Core Technical Skills -->
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <p class="subtitle">Core Expertise</p>
                     <div class="skill-tags">
                         <span class="tag">Incident Management</span>
                         <span class="tag">Inventory Management</span>
                         <span class="tag">Vendor Management</span>
-                        <span class="tag">SLA Management</span>
                         <span class="tag">Warranty Claims</span>
-                        <span class="tag">SOP & Documentation</span>
-                        <span class="tag">Jira / Agile</span>
-                        <span class="tag">Zoho Helpdesk</span>
+                        <span class="tag">SLA Management</span>
+                        <span class="tag">SOP &amp; Documentation Creation</span>
+                        <span class="tag">CIS Benchmarking (CentOS &amp; Ubuntu)</span>
+                        <span class="tag">LVM (Logical Volume Manager)</span>
+                        <span class="tag">IP Routing &amp; Firewalling</span>
+                        <span class="tag">Virtualization &amp; Containerization</span>
+                        <span class="tag">Network Architecture &amp; Protocols</span>
+                        <span class="tag">Web3 &amp; Blockchain Concepts</span>
+                        <span class="tag">Backup and Restoration Schemes</span>
+                        <span class="tag">UI/UX Principles</span>
                     </div>
                 </div>
 
-                <!-- Monitoring & Infrastructure -->
+                <!-- Tools, Software & Platforms -->
                 <div class="skill-category">
-                    <h3>Monitoring & Infrastructure</h3>
+                    <h3>Tools, Software &amp; Platforms</h3>
+                    <p class="subtitle">My Full Ecosystem Stack</p>
                     <div class="skill-tags">
-                        <span class="tag">Nagios</span>
                         <span class="tag">Zabbix</span>
+                        <span class="tag">Nagios</span>
                         <span class="tag">Docker</span>
                         <span class="tag">ELK Stack</span>
                         <span class="tag">Opensearch</span>
-                        <span class="tag">Cloudflare (DNS/Warp)</span>
-                        <span class="tag">SnipeIT</span>
-                    </div>
-                </div>
-
-                <!-- Servers & Networking -->
-                <div class="skill-category">
-                    <h3>Servers, Networking & OS</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Linux (Ubuntu/CentOS)</span>
-                        <span class="tag">Windows Server</span>
+                        <span class="tag">Wazuh SIEM</span>
                         <span class="tag">PFSense Firewall</span>
                         <span class="tag">Unify Wireless</span>
-                        <span class="tag">FreeIPA Directory</span>
-                        <span class="tag">CIS Security Benchmarking</span>
-                        <span class="tag">LVM (Logical Volume Manager)</span>
-                    </div>
-                </div>
-
-                <!-- Automation & Security -->
-                <div class="skill-category">
-                    <h3>Automation & Security</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Python Scripting</span>
-                        <span class="tag">Wazuh SIEM</span>
-                        <span class="tag">Jenkins CI/CD</span>
-                        <span class="tag">Gitlab CI</span>
+                        <span class="tag">FreeIPA Directory Services</span>
+                        <span class="tag">SnipeIT (IT Inventory)</span>
                         <span class="tag">Malwarebytes XDR</span>
                         <span class="tag">Azure AD</span>
                         <span class="tag">Google Workspace</span>
+                        <span class="tag">Zoho Helpdesk</span>
+                        <span class="tag">Jira / Agile</span>
+                        <span class="tag">Clickup</span>
+                        <span class="tag">Cloudflare (DNS &amp; Warp)</span>
+                        <span class="tag">Jenkins CI/CD</span>
+                        <span class="tag">Gitlab CI</span>
+                        <span class="tag">Git &amp; GitHub</span>
+                        <span class="tag">Heroku</span>
+                        <span class="tag">DigitalOcean Droplets</span>
+                        <span class="tag">AWS / Amazon ECS</span>
+                        <span class="tag">PythonAnywhere</span>
+                        <span class="tag">GoDaddy</span>
+                        <span class="tag">Matrix Biometrics</span>
+                        <span class="tag">Tally ERP</span>
+                        <span class="tag">Google Analytics</span>
+                        <span class="tag">Adsense</span>
+                        <span class="tag">Photoshop</span>
+                        <span class="tag">Autodesk AutoCAD</span>
+                        <span class="tag">n8n (Automation)</span>
+                        <span class="tag">MS Office Suite</span>
+                        <span class="tag">Postman API</span>
+                    </div>
+                </div>
+
+                <!-- Operating Systems, Development & Protocols -->
+                <div class="skill-category">
+                    <h3>Development, OS &amp; Networks</h3>
+                    <p class="subtitle">Tech, Code &amp; Protocols</p>
+                    <div class="skill-tags">
+                        <span class="tag">Linux (Ubuntu, CentOS, Debian)</span>
+                        <span class="tag">Windows Server OS</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Bash &amp; Powershell Scripting</span>
+                        <span class="tag">Ruby on Rails</span>
+                        <span class="tag">Django / REST Framework</span>
+                        <span class="tag">FastAPI / Flask</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">PHP-FPM</span>
+                        <span class="tag">C / C++</span>
+                        <span class="tag">Wordpress / CMS</span>
+                        <span class="tag">Nginx &amp; Apache</span>
+                        <span class="tag">MySQL / MSSQL / PostgreSQL / SQLite / MongoDB</span>
+                        <span class="tag">HTML5 / CSS3 / Bootstrap / JavaScript / jQuery</span>
+                        <span class="tag">Network Protocols: OSPF, BGP, EIGRP, STP, DHCP, ARP, SSH, Telnet, LLDP, IGMP, PPPoE</span>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- Experience Section -->
+        <!-- SECTION 2: WORK EXPERIENCE (JOB DETAILS) -->
         <section id="experience">
             <h2>Work Experience</h2>
             <div class="timeline">
